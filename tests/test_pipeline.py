@@ -19,3 +19,4 @@ def test_concatenation_of_dataframe_list():
     # Assert:
     assert df.shape == (4, 2)
     assert data_frame.equals(df)
+    assert df.shape != (5, 2)
