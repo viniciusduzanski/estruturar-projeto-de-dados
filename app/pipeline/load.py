@@ -1,9 +1,12 @@
-import pandas as pd
 import logging
 import os
 
+import pandas as pd
 
-def load_excel(data_frame: pd.DataFrame, output_path: str, file_name: str) -> str:
+
+def load_excel(
+    data_frame: pd.DataFrame, output_path: str, file_name: str
+) -> str:
     """
     Receive a dataframe and save it as an Excel file.
 
@@ -19,9 +22,9 @@ def load_excel(data_frame: pd.DataFrame, output_path: str, file_name: str) -> st
         os.makedirs(output_path)
 
     try:
-        path = f"{output_path}/{file_name}.xlsx"
+        path = f'{output_path}/{file_name}.xlsx'
         data_frame.to_excel(path, index=False)
-        return "File saved successfully"
+        return 'File saved successfully'
     except Exception as e:
-        logging.error(f"Failed to save Excel file: {e}")
+        logging.error(f'Failed to save Excel file: {e}')
         raise
