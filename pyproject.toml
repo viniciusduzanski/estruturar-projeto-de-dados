@@ -31,3 +31,6 @@ format = "isort . && blue ."
 test = "poetry run pytest -v"
 kill = "kill -9 $(lsof -t -i :8000)"
 doc = "mkdocs serve"
+
+[tool.poetry]
+package-mode = false
