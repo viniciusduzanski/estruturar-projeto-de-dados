@@ -1,0 +1,7 @@
+site_name: "Basic structure for a data project"
+
+theme:
+  name: "material"
+
+repo_name: "viniciusduzanski/estruturar-projeto-de-dados"
+repo_url: "https://github.com/viniciusduzanski/estruturar-projeto-de-dados"
