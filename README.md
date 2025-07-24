@@ -91,7 +91,7 @@ task doc
 7. Run the ETL pipeline:
 
 ```bash
-task run
+poetry run python app/main.py
 ```
 
 8. Check the data/output folder to confirm that the file was generated correctly.
